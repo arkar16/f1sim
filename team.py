@@ -1,4 +1,10 @@
 class Team10:
+    def __repr__(self):
+        return self.name
+
+    def __str__(self):
+        return self.name + " " + self.nation
+
     def __init__(self, name, nation, money):
         self.name = name
         self.nation = nation
@@ -12,5 +18,3 @@ t4 = Team10("Scuderia Ferrari", "ITA", 240)
 t5 = Team10("Williams", "GBR", 90)
 t6 = Team10("Renault", "FRA", 105)
 t7 = Team10("Force India", "IND", 80)
-
-
